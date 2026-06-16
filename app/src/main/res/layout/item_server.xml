@@ -1,0 +1,30 @@
+xml<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="#1A2740"
+    android:layout_marginBottom="6dp">
+
+    <TextView
+        android:id="@+id/tvServerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#E0EAFF"
+        android:textSize="14sp"
+<TextView
+        android:id="@+id/tvServerPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8899BB"
+        android:textSize="12sp"
+        android:layout_marginEnd="8dp"/>
+
+    <View
+        android:id="@+id/pingIndicator"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="#1D9E75"/>        android:textStyle="bold"/>
