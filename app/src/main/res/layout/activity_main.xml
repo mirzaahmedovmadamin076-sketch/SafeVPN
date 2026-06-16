@@ -1,0 +1,110 @@
+xml<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1B2D">
+
+  LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛡 SafeVPN"
+            android:textColor="#E0EAFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+  <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● Uzilgan"
+            android:textColor="#EF9F27"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+  <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="VPN ULASH"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1A5FAA"
+            android:layout_marginBottom="16dp"/>
+
+  <androidx.cardview.widget.CardView
+            android:id="@+id/cardStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#162035"
+            android:layout_marginBottom="16dp">
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+      <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="IP manzil" android:textColor="#8899BB"
+                        android:textSize="11sp" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvIp" android:text="—"
+                        android:textColor="#E0EAFF" android:textSize="13sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+      LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="Ping" android:textColor="#8899BB"
+                        android:textSize="11sp" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvPing" android:text="—"
+                        android:textColor="#E0EAFF" android:textSize="13sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="Protokol" android:textColor="#8899BB"
+                        android:textSize="11sp" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvProtocol" android:text="WireGuard"
+                        android:textColor="#E0EAFF" android:textSize="13sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+    </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:text="Server tanlang"
+            android:textColor="#8899BB"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+  <Button
+            android:id="@+id/btnSplitTunnel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="⚡ Split Tunneling Sozlamalari"
+            android:textColor="#4A9EFF"
+            android:backgroundTint="#162035"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</ScrollView>
